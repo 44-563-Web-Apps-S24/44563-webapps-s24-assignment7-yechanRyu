@@ -31,6 +31,7 @@
 		<button onclick="makeNewDiv()">Add end</button>
 		<button onclick="remove()">Remove</button>
  		<button onclick="addFront()">Add Front</button>
+		<button onclick="swap()">Swap</button>
 	
 	
 </body>
@@ -69,6 +70,27 @@
 		let container = document.getElementById('target');
 		container.insertBefore(newItem,container.firstChild);
 	}
+	function swap(){
+		let divlist = Array.from(document.getElementsByClassName("divlist"));
+		let index1 = Math.floor(Math.random() * divlist.length);
+		let index2 = Math.floor(Math.random() * divlist.length);
+		if(index1 == index2){
+			index2 = Math.floor(Math.random() * divlist.length);
+		}
+		let ele1 = divlist[index1];
+		let ele2 = divlist[index2];
+		if (index1 > index2){
+			var slicelist = divlist.slice(index2, index1);
+		}
+		else{
+			slicelist = divlist.slice(index1, index2);
+		}
+		ele1.parentNode.insertBefore(ele1, ele2);
+		divlist[divlist.length - 1].appendChild(slicelist);
+		let container = document.getElementById('target');
+		container.innerHTML = divlist;
+}
+
 	
 </script>
 </html>	

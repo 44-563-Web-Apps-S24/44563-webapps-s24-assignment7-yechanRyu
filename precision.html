@@ -32,7 +32,8 @@
     console.log(stopTime);}
   function startTime(){
     var startTime =Date.now();
-    for (let i = 0; i < 5; i++){
+    let randomv = Math.floor(Math.random() * 9) + 2;
+    for (let i = 0; i < randomv; i++){
       setTimeout(function (){
         document.getElementById("counter").innerHTML = i;
       }, (4 - i) * 1000);

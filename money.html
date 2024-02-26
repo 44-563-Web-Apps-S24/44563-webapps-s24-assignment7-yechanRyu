@@ -140,6 +140,7 @@
                 <img id="34" src="building.jpeg" width="150px" height="150px" alt="building" onclick="check(34)">
             </div>
         </div>
+        <button type="button" onclick="newgame()">New Game</button>
             <script>
                 var score = 0;
                 var locations = 0;
@@ -245,7 +246,18 @@
                     } else {
                         help_text.innerHTML = "All clear";
                     }  
-                    } 
+                    }
+                    function newgame(){
+                        gameOver=false;
+                        let imgrest = document.getElementsByTagName("img");
+                        for (i=0;i<imgrest.length;i++){
+                            imgrest[i].src ="building.jpeg"
+                        }
+                        monsterLocation = Math.floor(Math.random()*35);
+                        for (i=0;i<fancyCoinLocations.length;i++){
+                            fancyCoinLocations[i]=Math.floor(Math.random()*35);
+                        }
+                    }
             </script>
             </body>
             </html>
