@@ -13,7 +13,7 @@
   <h1>Yechan Ryu speed check</h1>
   <div id="target">Your time</div>
   <div id="counter">Count</div>
-  <button>Start Timer</button>
+  <button onclick="startTime()">Start Timer</button>
   <button onclick="recordTime()">Stop Timer</button>
   <h2>Timeout - Red in 3 seconds</h2>
 
@@ -29,8 +29,26 @@
 
   function recordTime() {
     stopTime = Date.now();
-    console.log(stopTime);
-}
+    console.log(stopTime);}
+  function startTime(){
+    var startTime =Date.now();
+    for (let i = 0; i < 5; i++){
+      setTimeout(function (){
+        document.getElementById("counter").innerHTML = i;
+      }, (4 - i) * 1000);
+    }
+    setTimeout(function(){
+      if(stopTime == "undefined"){
+        document.getElementById("target").innerHTML="Too Slow";
+      }
+      else{
+        stopTime = Date.now();
+        let elapsedTime =stopTime -startTime;
+        document.getElementById("target").innerHTML = "Time was " + elapsedTime;
+      }
+    },4000)
+  }
+
   function buttonPress1() {
     setTimeout(function(){
       document.getElementById('target').style.color = "red"
