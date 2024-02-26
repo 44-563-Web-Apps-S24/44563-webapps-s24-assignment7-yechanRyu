@@ -6,9 +6,9 @@
         p{display: flex;justify-content: center;}
         p:hover{color: white; background-color: black;}
         .location {display: table;}
-        .containers{display: table-cell;}
+        .containers{display: table-row;}
         .location {
-            display: table-row;
+            display: table-cell;
             padding: 5px;
             border: 1px solid black;
         }
@@ -18,128 +18,235 @@
         <p>Click on the locations to find coins, beware the monster</p>
         <p id="locations">Number of locations checked is zero.</p>
         <p id="score">Score is zero.</p>
-        <p>Click for help.</p>
+        <p onclick="help()">Click for help.</p>
         <p id="help">Help report</p>
+        <div class="containers container-fluid">
+        <div class="containers d-flex flex-row">
+            <div class="location p-2">
+                <img id="0" src="building.jpeg" width="150px" height="150px" alt="building" onclick="check(0)">
+            </div>
+            <div class="location p-2">
+                <img id="1" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(1)">
+            </div>
+            <div class="location p-2">
+                <img id="2" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(2)">
+            </div>
+            <div class="location p-2">
+                <img id="3" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(3)">
+            </div>
+            <div class="location p-2">
+                <img id="4" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(4)">
+            </div>
+        </div>
         <div class="containers">
+            <div class="location">
+                <img id="5" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(5)">
+            </div>
+            <div class="location">
+                <img id="6" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(6)">
+            </div>
+            <div class="location">
+                <img id="7" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(7)">
+            </div>
+            <div class="location">
+                <img id="8" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(8)">
+            </div>
+            <div class="location">
+                <img id="9" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(9)">
+            </div>
+        </div>
+        <div class="containers">
+            <div class="location">
+                <img id="10" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(10)">
+            </div>
+            <div class="location">
+                <img id="11" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(11)">
+            </div>
+            <div class="location">
+                <img id="12" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(12)">
+            </div>
+            <div class="location">
+                <img id="13" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(13)">
+            </div>
+            <div class="location">
+                <img id="14" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(14)">
+            </div>
+        </div>
+        <div class="containers">
+            <div class="location">
+                <img id="15" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(15)">
+            </div>
+            <div class="location">
+                <img id="16" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(16)">
+            </div>
+            <div class="location">
+                <img id="17" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(17)">
+            </div>
+            <div class="location">
+                <img id="18" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(18)">
+            </div>
+            <div class="location">
+                <img id="19" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(19)">
+            </div>
+        </div>
+        <div class="containers">
+            <div class="location">
+                <img id="20" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(20)">
+            </div>
+            <div class="location">
+                <img id="21" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(21)">
+            </div>
+            <div class="location">
+                <img id="22" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(22)">
+            </div>
+            <div class="location">
+                <img id="23" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(23)">
+            </div>
+            <div class="location">
+                <img id="24" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(24)">
+            </div>
+        </div>
+        <div class="containers">
+            <div class="location">
+                <img id="25" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(25)">
+            </div>
+            <div class="location">
+                <img id="26" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(26)">
+            </div>
+            <div class="location">
+                <img id="27" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(27)">
+            </div>
+            <div class="location">
+                <img id="28" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(28)">
+            </div>
+            <div class="location">
+                <img id="29" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(29)">
+            </div>
+        </div>
+        <div class="containers">
+            <div class="location">
+                <img id="30" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(30)">
+            </div>
+            <div class="location">
+                <img id="31" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(31)">
+            </div>
+            <div class="location">
+                <img id="32" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(32)">
+            </div>
+            <div class="location">
+                <img id="33" src="building.jpeg" width="150px" height="150px" alt="building"onclick="check(33)">
+            </div>
+            <div class="location">
+                <img id="34" src="building.jpeg" width="150px" height="150px" alt="building" onclick="check(34)">
+            </div>
+        </div>
+            <script>
+                var score = 0;
+                var locations = 0;
+                var lastLocation = 0;
+                var fancyCoinLocations = [2, 5, 14, 19, 23, 33];
+                var monsterLocation = 20;
+                var gameOver = false;
+                var locationss = {};
+            
+                function check(position) {
+                    if (gameOver) {
+                        return;
+                    }
+                    locationss = {
+                        0: document.getElementById("0"),
+                        1: document.getElementById("1"),
+                        2: document.getElementById("2"),
+                        3: document.getElementById("3"),
+                        4: document.getElementById("4"),
+                        5: document.getElementById("5"),
+                        6: document.getElementById("6"),
+                        7: document.getElementById("7"),
+                        8: document.getElementById("8"),
+                        9: document.getElementById("9"),
+                        10: document.getElementById("10"),
+                        11: document.getElementById("11"),
+                        12: document.getElementById("12"),
+                        13: document.getElementById("13"),
+                        14: document.getElementById("14"),
+                        15: document.getElementById("15"),
+                        16: document.getElementById("16"),
+                        17: document.getElementById("17"),
+                        18: document.getElementById("18"),
+                        19: document.getElementById("19"),
+                        20: document.getElementById("20"),
+                        21: document.getElementById("21"),
+                        22: document.getElementById("22"),
+                        23: document.getElementById("23"),
+                        24: document.getElementById("24"),
+                        25: document.getElementById("25"),
+                        26: document.getElementById("26"),
+                        27: document.getElementById("27"),
+                        28: document.getElementById("28"),
+                        29: document.getElementById("29"),
+                        30: document.getElementById("30"),
+                        31: document.getElementById("31"),
+                        32: document.getElementById("32"),
+                        33: document.getElementById("33"),
+                        34: document.getElementById("34")
+                    };
+            
+                    let image = locationss[position];
+            
+                    if (position == monsterLocation) {
+                        image.src = 'monster.jpeg';
+                        gameOver = true;
+                        score -= 5;
+                    } else if (fancyCoinLocations.includes(position)) {
+                        image.src = 'fancycoin.jpeg';
+                        score += 3;
+                    } else {
+                        image.src = 'coin.jpeg';
+                        score += 1;
+                    }
+                    text_number = document.getElementById("locations")
+                    text_number.innerHTML ="number of locations: "+ position;
+                    text_score = document.getElementById("score");
+                    text_score.innerHTML="Score: "+ score;
+                    locations = position;
+                    help(position)
+                }
+                
+                function help(locations) {
+                    lastLocation = locations;
+                    var row = Math.floor(lastLocation / 5);
+                    var col = lastLocation % 5;
+                    var monsteRow = Math.floor(monsterLocation / 5);
+                    var mosterCol = monsterLocation % 5;
+                    var help_text = document.getElementById("help");
+                    let isClose = false;
+                    let isGrrr = false;
 
-        </div>
-        <div class="containers">
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-        </div>
-        <div class="containers">
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-        </div>
-        <div class="containers">
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-        </div>
-        <div class="containers">
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-        </div>
-        <div class="containers">
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-        </div>
-        <div class="containers">
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-        </div>
-        <div class="containers">
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-            <div class="location">
-                <img src="building.jpeg" width="200px" height="200ps" alt="building">
-            </div>
-    </body>
-</html>
+                    for (var i = 0; i < fancyCoinLocations.length; i++) {
+                        if (
+                            lastLocation - 1 == fancyCoinLocations[i] ||
+                            lastLocation + 1 == fancyCoinLocations[i] ||
+                            lastLocation - 5 == fancyCoinLocations[i] ||
+                            lastLocation + 5 == fancyCoinLocations[i]
+                        ) {
+                            isClose = true;
+                        }
+                    }
+
+                    if (Math.abs(row - monsteRow) <= 1 && Math.abs(col - mosterCol) <= 1) {
+                        isGrrr = true;
+                    }
+                    var help_text = document.getElementById("help");
+
+                    if (isGrrr) {
+                        help_text.innerHTML = "Grrr";
+                    } else if (isClose) {
+                        help_text.innerHTML = "So close";
+                    } else {
+                        help_text.innerHTML = "All clear";
+                    }  
+                    } 
+            </script>
+            </body>
+            </html>
+            
